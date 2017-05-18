@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EpamAndroidTask7</string>
+    <string name="frament_1">Custom View</string>
+    <string name="fragment_2">Fragment 2</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>

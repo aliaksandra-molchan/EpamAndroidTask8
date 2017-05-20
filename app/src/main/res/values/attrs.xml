@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="Smile">
-        <attr name="bodyColor" format="color" />
+        <attr name="faceColor" format="color" />
+        <attr name="sheenColor" format="color" />
+        <attr name="smileColor" format="color" />
     </declare-styleable>
 </resources>

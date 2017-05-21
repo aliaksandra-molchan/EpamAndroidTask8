@@ -124,8 +124,8 @@ public class Smile extends View implements View.OnClickListener {
     }
 
     protected void setHappySmile() {
-        angle1 = 140;
-        angle2 = 360;
+        angle1 = -180;
+        angle2 = -180;
         invalidate();
         requestLayout();
     }
@@ -142,10 +142,9 @@ public class Smile extends View implements View.OnClickListener {
         if (isSad) {
             isSad = false;
             setHappySmile();
-            draw(canvas);
         } else {
             isSad = true;
-            draw(canvas);
+            setSadSmile();
         }
     }
 }

@@ -14,30 +14,14 @@ public class Smile extends View implements View.OnClickListener {
 
     private boolean isSad = true;
 
-    private float radius;
-    private float centerX;
-    private float centerY;
-
-    private float eyeRadius;
-    private float eyeCenter;
-    private float sheenRadius;
-    private float smileRadius;
-
     private Paint bodyPaint;
     private Paint smilePaint;
     private Paint eyePaint;
     private Paint sheenPaint;
     private RectF smileOval;
 
-    float smileLeft;
-    float smileRight;
-    float smileTop;
-    float smileButtom;
-
     private float angle1;
     private float angle2;
-
-    private Canvas canvas;
 
     private int faceColor;
     private int smileColor;
@@ -101,18 +85,18 @@ public class Smile extends View implements View.OnClickListener {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        centerX = getWidth() / 2;
-        centerY = getHeight() / 2;
-        radius = centerX / 6;
-        eyeRadius = radius / 5;
-        eyeCenter = radius / 4;
-        sheenRadius = eyeRadius / 2;
-        smileRadius = radius / 2;
+        float centerX = getWidth() / 2;
+        float centerY = getHeight() / 2;
+        float radius = centerX / 6;
+        float eyeRadius = radius / 5;
+        float eyeCenter = radius / 4;
+        float sheenRadius = eyeRadius / 2;
+        float smileRadius = radius / 2;
 
-        smileLeft = centerX - smileRadius;
-        smileTop = centerY + smileRadius / 2;
-        smileRight = centerX + smileRadius;
-        smileButtom = (float) (centerY + 1.5 * smileRadius);
+        float smileLeft = centerX - smileRadius;
+        float smileTop = centerY + smileRadius / 2;
+        float smileRight = centerX + smileRadius;
+        float smileButtom = (float) (centerY + 1.5 * smileRadius);
 
         canvas.drawCircle(centerX, centerY, radius, bodyPaint);
         canvas.drawCircle(centerX - eyeCenter, centerY - eyeCenter, eyeRadius, eyePaint);

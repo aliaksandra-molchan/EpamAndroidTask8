@@ -70,5 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView image = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.image_view);
         Picasso.with(this).load(URL).into(image);
+        image.setScaleType(ImageView.ScaleType.CENTER_CROP);
     }
 }

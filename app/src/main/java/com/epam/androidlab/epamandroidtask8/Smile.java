@@ -81,6 +81,7 @@ public class Smile extends View implements View.OnClickListener {
         eyePaint.setColor(ContextCompat.getColor(this.getContext(), R.color.white));
         sheenPaint = new Paint();
         sheenPaint.setColor(sheenColor);
+        setSaveEnabled(true);
     }
 
     @Override

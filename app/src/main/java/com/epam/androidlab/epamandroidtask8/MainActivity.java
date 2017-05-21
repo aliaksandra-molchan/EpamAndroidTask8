@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        ImageView image = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.imageView);
+        ImageView image = (ImageView) navigationView.findViewById(R.id.image_view);
         Picasso.with(this).load(URL).into(image);
     }
 }

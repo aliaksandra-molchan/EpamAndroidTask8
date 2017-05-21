@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.epam.androidlab.epamandroidtask8.Smile
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        custom:faceColor="@color/yellow"
+        custom:sheenColor="@color/grey"
+        custom:smileColor="@color/yellowDark"
+        android:id="@+id/smile" />
+</merge>
